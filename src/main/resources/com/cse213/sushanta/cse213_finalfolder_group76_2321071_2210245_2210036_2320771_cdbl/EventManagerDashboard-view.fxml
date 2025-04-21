@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cse213.sushanta.cse213_finalfolder_group76_2321071_2210245_2210036_2320771_cdbl.EventManagerDashboardView">
+   <children>
+      <Label layoutX="148.0" layoutY="33.0" prefHeight="31.0" prefWidth="278.0" text="Event Manager Dashboard">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Button layoutX="40.0" layoutY="111.0" mnemonicParsing="false" onAction="#myProfileOnAction" prefHeight="26.0" prefWidth="164.0" text="My Profile" />
+      <Button layoutX="40.0" layoutY="187.0" mnemonicParsing="false" onAction="#clientTransactionOnAction" prefHeight="26.0" prefWidth="164.0" text="Client Transaction" />
+      <Button layoutX="40.0" layoutY="248.0" mnemonicParsing="false" onAction="#createEventOnAction" prefHeight="26.0" prefWidth="164.0" text="Create Event" />
+      <Button layoutX="40.0" layoutY="318.0" mnemonicParsing="false" onAction="#modifyEventOnAction" prefHeight="26.0" prefWidth="164.0" text="Modify Event" />
+      <Button layoutX="375.0" layoutY="111.0" mnemonicParsing="false" onAction="#cancelEventOnAction" prefHeight="26.0" prefWidth="164.0" text="Cancel Event" />
+      <Button layoutX="375.0" layoutY="187.0" mnemonicParsing="false" onAction="#reassignEventOnAction" prefHeight="26.0" prefWidth="164.0" text="Reassign Event" />
+      <Button layoutX="375.0" layoutY="248.0" mnemonicParsing="false" onAction="#createBudgetOnAction" prefHeight="26.0" prefWidth="164.0" text="Create Budget" />
+      <Button layoutX="375.0" layoutY="318.0" mnemonicParsing="false" onAction="#resignationOnAction" prefHeight="26.0" prefWidth="164.0" text="Resignation" />
+   </children>
+</AnchorPane>
