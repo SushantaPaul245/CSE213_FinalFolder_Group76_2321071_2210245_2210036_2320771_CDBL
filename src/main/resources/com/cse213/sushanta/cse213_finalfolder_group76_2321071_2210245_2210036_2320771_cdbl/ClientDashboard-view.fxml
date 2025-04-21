@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.cse213.sushanta.cse213_finalfolder_group76_2321071_2210245_2210036_2320771_cdbl.ClientDashboard"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cse213.sushanta.cse213_finalfolder_group76_2321071_2210245_2210036_2320771_cdbl.ClientDashboard">
+   <children>
+      <Label layoutX="212.0" layoutY="39.0" prefHeight="35.0" prefWidth="194.0" text="Client Dshboard">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="52.0" layoutY="115.0" mnemonicParsing="false" onAction="#buySharesOnAction" prefHeight="26.0" prefWidth="146.0" text="Buy Shares" />
+      <Button layoutX="53.0" layoutY="188.0" mnemonicParsing="false" onAction="#sellSharesOnAction" prefHeight="26.0" prefWidth="146.0" text="Sell Shares" />
+      <Button layoutX="57.0" layoutY="248.0" mnemonicParsing="false" onAction="#viewBalanceOnAction" prefHeight="26.0" prefWidth="146.0" text="View Balance" />
+      <Button layoutX="56.0" layoutY="309.0" mnemonicParsing="false" onAction="#transferSharesOnAction" prefHeight="26.0" prefWidth="146.0" text="Transfer Shares" />
+      <Button layoutX="436.0" layoutY="115.0" mnemonicParsing="false" onAction="#withdrawFundsOnAction" prefHeight="26.0" prefWidth="146.0" text="Withdraw Funds" />
+      <Button layoutX="436.0" layoutY="187.0" mnemonicParsing="false" onAction="#updateProfileOnAction" prefHeight="26.0" prefWidth="146.0" text="Update Profile" />
+      <Button layoutX="434.0" layoutY="248.0" mnemonicParsing="false" onAction="#accountSettingsOnAction" prefHeight="26.0" prefWidth="146.0" text="Account Settings" />
+      <Button layoutX="433.0" layoutY="309.0" mnemonicParsing="false" onAction="#closeAccountOnAction" prefHeight="26.0" prefWidth="146.0" text="Close Account" />
+   </children>
 </AnchorPane>
