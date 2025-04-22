@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="alif_2321071.alif_2321071.accountant.IncomeView"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="alif_2321071.alif_2321071.accountant.IncomeView">
+   <children>
+      <Button layoutX="225.0" layoutY="41.0" mnemonicParsing="false" onAction="#financialUpdatesButton" prefHeight="61.0" prefWidth="180.0" text="Financial Updates" />
+      <Button layoutX="219.0" layoutY="116.0" mnemonicParsing="false" onAction="#transactionsButton" prefHeight="74.0" prefWidth="180.0" text="Transactions" />
+      <Button layoutX="208.0" layoutY="215.0" mnemonicParsing="false" onAction="#departmentalFinancialUpdateButton" prefHeight="62.0" prefWidth="214.0" text="Departmental Financial Update" />
+      <Button layoutX="260.0" layoutY="296.0" mnemonicParsing="false" onAction="#othersButton" prefHeight="62.0" prefWidth="110.0" text="Others" />
+   </children>
 </AnchorPane>

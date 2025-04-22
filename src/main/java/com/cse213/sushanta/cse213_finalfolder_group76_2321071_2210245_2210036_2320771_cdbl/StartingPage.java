@@ -13,7 +13,13 @@ import java.io.IOException;
 public class StartingPage {
 
     @FXML
-    void accountantOnAction(ActionEvent event) {
+    void accountantOnAction(ActionEvent event) throws IOException{
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("accountant_dashboard-view.fxml"));
+        Parent parent = loader.load();
+        Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene newScene = new Scene(parent);
+        currentStage.setScene(newScene);
+        currentStage.show();
 
     }
 
@@ -23,7 +29,13 @@ public class StartingPage {
     }
 
     @FXML
-    void chairmanOnAction(ActionEvent event) {
+    void chairmanOnAction(ActionEvent event) throws IOException{
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("chairman_dashboard-view.fxml"));
+        Parent parent = loader.load();
+        Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene newScene = new Scene(parent);
+        currentStage.setScene(newScene);
+        currentStage.show();
 
     }
 
