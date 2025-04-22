@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cse213.sushanta.cse213_finalfolder_group76_2321071_2210245_2210036_2320771_cdbl.MaterialsInventoryView">
+   <children>
+      <Label layoutX="228.0" layoutY="34.0" prefHeight="33.0" prefWidth="134.0" />
+      <Label layoutX="217.0" layoutY="17.0" prefHeight="34.0" prefWidth="166.0" text="Materials Inventory">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="515.0" layoutY="98.0" mnemonicParsing="false" onAction="#searchOnAction" prefHeight="26.0" prefWidth="70.0" text="Search" />
+      <Label fx:id="itemTypeComboBox" layoutX="23.0" layoutY="80.0" prefHeight="18.0" prefWidth="134.0" text="Item Type" />
+      <Label layoutX="242.0" layoutY="80.0" prefHeight="18.0" prefWidth="134.0" text="Supplier" />
+      <Label layoutX="444.0" layoutY="80.0" prefHeight="18.0" prefWidth="134.0" text="Storage Location" />
+      <TextField fx:id="storageLocationTextField" layoutX="396.0" layoutY="98.0" prefHeight="26.0" prefWidth="114.0" />
+      <SplitMenuButton fx:id="itemTypeComboBox" layoutX="14.0" layoutY="98.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="114.0">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </SplitMenuButton>
+      <SplitMenuButton fx:id="supplierComboBox" layoutX="217.0" layoutY="98.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="114.0">
+         <items>
+            <MenuItem mnemonicParsing="false" text="Action 1" />
+            <MenuItem mnemonicParsing="false" text="Action 2" />
+         </items>
+      </SplitMenuButton>
+      <TableView fx:id="materialsInventoryTableView" layoutX="13.0" layoutY="155.0" prefHeight="175.0" prefWidth="574.0">
+        <columns>
+          <TableColumn fx:id="itemNameTableColumn" prefWidth="136.0" text="Iitem Name" />
+          <TableColumn fx:id="itemTypeTableColumn" prefWidth="142.4000244140625" text="Item Type" />
+            <TableColumn fx:id="quantityAvailableTableColumn" prefWidth="120.79998779296875" text="Quantity Available" />
+            <TableColumn fx:id="supplierLocationTableColumn" prefWidth="172.80001220703127" text="Supplier Location" />
+        </columns>
+      </TableView>
+      <Button layoutX="220.0" layoutY="349.0" mnemonicParsing="false" onAction="#returnToDashboardOnAction" prefHeight="26.0" prefWidth="160.0" text="Return to dashboard" />
+   </children>
+</AnchorPane>
