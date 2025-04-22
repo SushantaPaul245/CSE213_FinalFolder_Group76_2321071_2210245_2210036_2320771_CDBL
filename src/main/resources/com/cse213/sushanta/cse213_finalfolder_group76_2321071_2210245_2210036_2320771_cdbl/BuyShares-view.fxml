@@ -8,7 +8,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="532.0" prefWidth="748.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cse213.sushanta.cse213_finalfolder_group76_2321071_2210245_2210036_2320771_cdbl.BuySharesView">
+<AnchorPane prefHeight="532.0" prefWidth="748.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cse213.sushanta.cse213_finalfolder_group76_2321071_2210245_2210036_2320771_cdbl.BuySharesViewController">
    <children>
       <Label layoutX="32.0" layoutY="71.0" prefHeight="18.0" prefWidth="112.0" text="Number of Shares" />
       <TextField fx:id="numberOfSharesTextField" layoutX="182.0" layoutY="67.0" />

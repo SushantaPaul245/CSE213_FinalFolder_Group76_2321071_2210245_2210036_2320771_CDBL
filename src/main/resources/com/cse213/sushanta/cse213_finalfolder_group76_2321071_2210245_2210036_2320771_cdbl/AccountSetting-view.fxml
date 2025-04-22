@@ -6,14 +6,13 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cse213.sushanta.cse213_finalfolder_group76_2321071_2210245_2210036_2320771_cdbl.AccountSettingView">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cse213.sushanta.cse213_finalfolder_group76_2321071_2210245_2210036_2320771_cdbl.AccountSettingViewController">
    <children>
       <Label layoutX="54.0" layoutY="54.0" text="Current Password" />
       <Label layoutX="54.0" layoutY="94.0" text="New Password" />
       <Label layoutX="54.0" layoutY="132.0" text="Confirm Password" />
-      <Button layoutX="177.0" layoutY="200.0" mnemonicParsing="false" onAction="#changePasswordOnAction" text="Change Password" />
-      <Button layoutX="503.0" layoutY="340.0" mnemonicParsing="false" onAction="#backOnAction" text="Back" />
+      <Button layoutX="177.0" layoutY="200.0" mnemonicParsing="false" onAction="#changePasswordOnActionCP" text="Change Password" />
+      <Button layoutX="503.0" layoutY="340.0" mnemonicParsing="false" onAction="#backOnActionB" text="Back" />
       <TextField fx:id="currentPasswordTextField" layoutX="170.0" layoutY="50.0" />
       <TextField fx:id="newPasswordTextField" layoutX="171.0" layoutY="90.0" />
       <TextField fx:id="confirmPasswordTextField" layoutX="172.0" layoutY="128.0" />
