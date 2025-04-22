@@ -10,6 +10,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -65,7 +66,7 @@ public class CreateBudgetViewController {
 
     @FXML
     void backOnAction(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Event Manager /Event Manager Dashboard-view.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("EventManagerDashboard-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene newScene = new Scene(parent);
@@ -76,6 +77,16 @@ public class CreateBudgetViewController {
 
     @FXML
     void submitBudgetForApprovalOnAction(ActionEvent event) {
+
+    }
+    @FXML
+    public void initialize() {
+        eventNameTableColumn.setCellValueFactory(new PropertyValueFactory<>("EventName"));
+        venueCostTableColumn.setCellValueFactory(new PropertyValueFactory<>("VenueCost"));
+        foodCostTableColumn.setCellValueFactory(new PropertyValueFactory<>("FoodCost"));
+        meterialsCostTableColumn.setCellValueFactory(new PropertyValueFactory<>("MaterialsCost"));
+        servicesCostTableColumn.setCellValueFactory(new PropertyValueFactory<>("ServicesCost"));
+        othersCostTableColumn.setCellValueFactory(new PropertyValueFactory<>("OthersCost"));
 
     }
 

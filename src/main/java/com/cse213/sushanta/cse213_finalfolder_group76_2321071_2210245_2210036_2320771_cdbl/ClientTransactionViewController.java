@@ -46,7 +46,7 @@ public class ClientTransactionViewController {
 
     @FXML
     void backOnAction(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Event Manager /Event Manager Dashboard-view.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("EventManagerDashboard-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene newScene = new Scene(parent);
@@ -63,6 +63,11 @@ public class ClientTransactionViewController {
     @FXML
     public void initialize() {
         sharesTypeComboBox.getItems().addAll("Buy", "Sell");
+        clientIDTableColumn.setCellValueFactory(new PropertyValueFactory<>("ClientID"));
+        clientNameTableColumn.setCellValueFactory(new PropertyValueFactory<>("ClientName"));
+        sharesTypeTableColumn.setCellValueFactory(new PropertyValueFactory<>("SharesType"));
+        sharesPriceTableColumn.setCellValueFactory(new PropertyValueFactory<>("SharesPrice"));
+        numberOfSharesTableColumn.setCellValueFactory(new PropertyValueFactory<>("NumberOfShares"));
 
     }
 

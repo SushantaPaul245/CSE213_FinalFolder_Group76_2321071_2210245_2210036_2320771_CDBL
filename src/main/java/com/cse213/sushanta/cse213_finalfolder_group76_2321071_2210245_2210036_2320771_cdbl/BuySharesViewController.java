@@ -48,7 +48,7 @@ public class BuySharesViewController {
 
     @FXML
     void backOnAction(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Client /Client Dashboard-view.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("ClientDashboard-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene newScene = new Scene(parent);
