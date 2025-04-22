@@ -2,42 +2,49 @@ package com.cse213.sushanta.cse213_finalfolder_group76_2321071_2210245_2210036_2
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class CreateBudgetViewController {
 
     @FXML
-    private TableView<?> budgetTableView;
+    private TableView<CreateBudget> budgetTableView;
 
     @FXML
-    private TableColumn<?, ?> eventNameTableColumn;
+    private TableColumn<CreateBudget,String> eventNameTableColumn;
 
     @FXML
     private TextField eventNameTextField;
 
     @FXML
-    private TableColumn<?, ?> foodCostTableColumn;
+    private TableColumn<CreateBudget,Integer> foodCostTableColumn;
 
     @FXML
     private TextField foodCostTextField;
 
     @FXML
-    private TableColumn<?, ?> meterialsCostTableColumn;
+    private TableColumn<CreateBudget,Integer> meterialsCostTableColumn;
 
     @FXML
     private TextField meterialsCostTextField;
 
     @FXML
-    private TableColumn<?, ?> othersCostTableColumn;
+    private TableColumn<CreateBudget,Integer> othersCostTableColumn;
 
     @FXML
     private TextField othersCostTextField;
 
     @FXML
-    private TableColumn<?, ?> servicesCostTableColumn;
+    private TableColumn<CreateBudget,Integer> servicesCostTableColumn;
 
     @FXML
     private TextField servicesCostTextField;
@@ -46,7 +53,7 @@ public class CreateBudgetViewController {
     private TextArea totalCostTextArea;
 
     @FXML
-    private TableColumn<?, ?> venueCostTableColumn;
+    private TableColumn<CreateBudget,Integer> venueCostTableColumn;
 
     @FXML
     private TextField venueCostTextField;
@@ -57,7 +64,13 @@ public class CreateBudgetViewController {
     }
 
     @FXML
-    void backOnAction(ActionEvent event) {
+    void backOnAction(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Event Manager /Event Manager Dashboard-view.fxml"));
+        Parent parent = loader.load();
+        Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene newScene = new Scene(parent);
+        currentStage.setScene(newScene);
+        currentStage.show();
 
     }
 
