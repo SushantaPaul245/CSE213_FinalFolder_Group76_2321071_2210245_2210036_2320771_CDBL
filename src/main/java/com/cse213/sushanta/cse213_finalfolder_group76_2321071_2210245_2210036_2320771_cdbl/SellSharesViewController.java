@@ -10,6 +10,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -47,7 +48,7 @@ public class SellSharesViewController {
 
     @FXML
     void backOnAction(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Client /Client Dashboard-view.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("ClientDashboard-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene newScene = new Scene(parent);
@@ -56,5 +57,12 @@ public class SellSharesViewController {
 
 
     }
+    @FXML
+    public void initialize() {
+        sharesTableColumn.setCellValueFactory(new PropertyValueFactory<>("Shares"));
+        priceTableColumn.setCellValueFactory(new PropertyValueFactory<>("Price"));
+
+    }
+
 
 }
