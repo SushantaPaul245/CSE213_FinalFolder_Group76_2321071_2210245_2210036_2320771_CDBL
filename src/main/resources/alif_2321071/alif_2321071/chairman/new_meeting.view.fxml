@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="alif_2321071.NewMeetingView"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="alif_2321071.NewMeetingView">
+   <children>
+      <DatePicker fx:id="assignMeetingDatePicker" layoutX="283.0" layoutY="66.0" />
+      <Label layoutX="82.0" layoutY="70.0" text="Assign the date of meeting:" />
+      <Label layoutX="248.0" layoutY="25.0" text="NEW MEETING" />
+      <Button layoutX="371.0" layoutY="129.0" mnemonicParsing="false" onAction="#confirmButton" prefHeight="47.0" prefWidth="87.0" text="Confirm" />
+   </children>
 </AnchorPane>
