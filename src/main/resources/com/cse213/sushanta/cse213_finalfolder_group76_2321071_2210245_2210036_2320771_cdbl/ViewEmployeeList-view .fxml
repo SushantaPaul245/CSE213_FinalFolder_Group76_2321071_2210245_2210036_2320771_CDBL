@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cse213.sushanta.cse213_finalfolder_group76_2321071_2210245_2210036_2320771_cdbl.ViewEmployeeListView">
+   <children>
+      <Label layoutX="222.0" layoutY="7.0" prefHeight="34.0" prefWidth="179.0" text="View Employee List ">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="209.0" layoutY="352.0" mnemonicParsing="false" onAction="#returnToDashboardOnAction" prefHeight="26.0" prefWidth="170.0" text="Return To Dashboard" />
+      <TableView fx:id="employeeTableView" layoutX="17.0" layoutY="210.0" prefHeight="142.0" prefWidth="564.0">
+        <columns>
+          <TableColumn fx:id="idTableColumn" prefWidth="140.79998779296875" text="ID" />
+          <TableColumn fx:id="nameTableColumn" prefWidth="128.800048828125" text="Name" />
+            <TableColumn fx:id="departmentTableColumn" prefWidth="149.5999755859375" text="Department" />
+            <TableColumn fx:id="positionTableColumn" prefWidth="144.00006103515625" text="Position" />
+        </columns>
+      </TableView>
+      <Label layoutX="32.0" layoutY="40.0" prefHeight="26.0" prefWidth="38.0" text="ID" />
+      <Label layoutX="32.0" layoutY="73.0" text="Name" />
+      <Label layoutX="22.0" layoutY="111.0" prefHeight="26.0" prefWidth="57.0" text="Position" />
+      <TextField fx:id="idTextField" layoutX="64.0" layoutY="41.0" />
+      <TextField fx:id="nameTextField" layoutX="71.0" layoutY="69.0" />
+      <ComboBox fx:id="positionComboBox" layoutX="80.0" layoutY="111.0" prefWidth="150.0" />
+      <Label layoutX="15.0" layoutY="153.0" prefHeight="18.0" prefWidth="72.0" text="Department" />
+      <ComboBox fx:id="departmentComboBox" layoutX="87.0" layoutY="150.0" prefWidth="150.0" />
+      <Button layoutX="273.0" layoutY="150.0" mnemonicParsing="false" onAction="#searchOnAction" text="Search" />
+   </children>
+</AnchorPane>
