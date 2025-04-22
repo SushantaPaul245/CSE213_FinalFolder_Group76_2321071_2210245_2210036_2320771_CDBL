@@ -3,18 +3,23 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common_codes.StartingPageView">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common_codes.StartingPageView">
    <children>
-      <Button layoutX="311.0" layoutY="53.0" mnemonicParsing="false" onAction="#accountantButton" prefHeight="51.0" prefWidth="274.0" text="ACCOUNTANT" />
-      <Button layoutX="14.0" layoutY="53.0" mnemonicParsing="false" onAction="#chairmanButton" prefHeight="51.0" prefWidth="274.0" text="CHAIRMAN" />
-      <Button layoutX="14.0" layoutY="135.0" mnemonicParsing="false" onAction="#clientButton" prefHeight="51.0" prefWidth="274.0" text="CLIENT" />
-      <Button layoutX="311.0" layoutY="135.0" mnemonicParsing="false" onAction="#EventManagementButton" prefHeight="51.0" prefWidth="274.0" text="EVENT MANAGEMENT" />
-      <Button layoutX="14.0" layoutY="223.0" mnemonicParsing="false" onAction="#HrManagerButton" prefHeight="51.0" prefWidth="274.0" text="HR MANAGER" />
-      <Button layoutX="311.0" layoutY="223.0" mnemonicParsing="false" onAction="#ReceptionistButton" prefHeight="51.0" prefWidth="274.0" text="RECEPTIONIST" />
-      <Button layoutX="14.0" layoutY="307.0" mnemonicParsing="false" onAction="#adminbutton" prefHeight="51.0" prefWidth="274.0" text="ADMIN" />
-      <Button layoutX="311.0" layoutY="307.0" mnemonicParsing="false" onAction="#securityManagerButton" prefHeight="51.0" prefWidth="274.0" text="SECURITY MANAGER" />
-      <Label layoutX="271.0" layoutY="14.0" prefHeight="30.0" prefWidth="98.0" style="-fx-background-color: ash;" text="DASHBOARDS" textFill="#0d0d0d" />
+      <Button layoutX="50.0" layoutY="89.0" mnemonicParsing="false" onAction="#chairmanOnAction" prefHeight="26.0" prefWidth="127.0" text="Chairman" />
+      <Button layoutX="50.0" layoutY="173.0" mnemonicParsing="false" onAction="#accountantOnAction" prefHeight="26.0" prefWidth="127.0" text="Accountant" />
+      <Button layoutX="50.0" layoutY="244.0" mnemonicParsing="false" onAction="#clientOnAction" prefHeight="26.0" prefWidth="127.0" text="Client" />
+      <Button layoutX="50.0" layoutY="320.0" mnemonicParsing="false" onAction="#eventManagerOnAction" prefHeight="26.0" prefWidth="127.0" text="Event Manager" />
+      <Button layoutX="396.0" layoutY="89.0" mnemonicParsing="false" onAction="#hrManagerOnAction" prefHeight="26.0" prefWidth="127.0" text=" HR Manager" />
+      <Button layoutX="396.0" layoutY="173.0" mnemonicParsing="false" onAction="#receptionistOnAction" prefHeight="26.0" prefWidth="127.0" text="Receptionist" />
+      <Button layoutX="396.0" layoutY="244.0" mnemonicParsing="false" onAction="#adminOnAction" prefHeight="26.0" prefWidth="127.0" text="Admin" />
+      <Button layoutX="396.0" layoutY="320.0" mnemonicParsing="false" onAction="#securityManagerOnAction" prefHeight="26.0" prefWidth="127.0" text="Security Manager" />
+      <Label layoutX="119.0" layoutY="27.0" prefHeight="32.0" prefWidth="361.0" text="Welcome to CDBL User Dashboard">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
