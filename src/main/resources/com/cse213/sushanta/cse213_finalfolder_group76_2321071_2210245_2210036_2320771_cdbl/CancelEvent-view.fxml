@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cse213.sushanta.cse213_finalfolder_group76_2321071_2210245_2210036_2320771_cdbl.CancelEventView">
+   <children>
+      <Label layoutX="40.0" layoutY="42.0" text="Event Name" />
+      <Label layoutX="43.0" layoutY="113.0" text="Event Date" />
+      <TextField fx:id="eventNameTextField" layoutX="129.0" layoutY="37.0" prefHeight="26.0" prefWidth="175.0" />
+      <DatePicker fx:id="eventDatePicker" layoutX="129.0" layoutY="109.0" />
+      <Button layoutX="137.0" layoutY="208.0" mnemonicParsing="false" onAction="#cancelEventOnAction" prefHeight="26.0" prefWidth="158.0" text="Cancel Event" />
+      <Button layoutX="500.0" layoutY="334.0" mnemonicParsing="false" onAction="#backOnAction" text="Back" />
+   </children>
+</AnchorPane>
