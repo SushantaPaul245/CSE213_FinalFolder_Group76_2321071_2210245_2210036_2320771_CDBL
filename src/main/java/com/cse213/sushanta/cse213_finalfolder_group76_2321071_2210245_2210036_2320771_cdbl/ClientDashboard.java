@@ -18,7 +18,7 @@ public class ClientDashboard {
 
     @FXML
     void accountSettingsOnAction(ActionEvent event)  throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Client/AccountSetting-view.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("AccountSetting-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene newScene = new Scene(parent);
@@ -30,7 +30,7 @@ public class ClientDashboard {
 
     @FXML
     void buySharesOnAction(ActionEvent event)  throws IOException  {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Client/Buy Shares-view.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("BuyShares-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene newScene = new Scene(parent);
@@ -43,7 +43,7 @@ public class ClientDashboard {
 
     @FXML
     void closeAccountOnAction(ActionEvent event)  throws IOException   {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Client/Close Account-view.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("CloseAccount-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene newScene = new Scene(parent);
@@ -54,7 +54,7 @@ public class ClientDashboard {
 
     @FXML
     void sellSharesOnAction(ActionEvent event)  throws IOException    {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Client/Sell Shares-view.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("SellShares-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene newScene = new Scene(parent);
@@ -66,7 +66,7 @@ public class ClientDashboard {
 
     @FXML
     void transferSharesOnAction(ActionEvent event)  throws IOException    {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Client/Transfer Shares-view.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("TransferShares-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene newScene = new Scene(parent);
@@ -78,7 +78,7 @@ public class ClientDashboard {
 
     @FXML
     void updateProfileOnAction(ActionEvent event)  throws IOException    {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Client/Update Profile-view.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("UpdateProfile-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene newScene = new Scene(parent);
@@ -90,7 +90,7 @@ public class ClientDashboard {
 
     @FXML
     void viewBalanceOnAction(ActionEvent event)  throws IOException    {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Client/View Balance-view.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("ViewBalance-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene newScene = new Scene(parent);
@@ -102,7 +102,7 @@ public class ClientDashboard {
 
     @FXML
     void withdrawFundsOnAction(ActionEvent event)  throws IOException    {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Client/Withdraw Funds-view.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("WithdrawFunds-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene newScene = new Scene(parent);

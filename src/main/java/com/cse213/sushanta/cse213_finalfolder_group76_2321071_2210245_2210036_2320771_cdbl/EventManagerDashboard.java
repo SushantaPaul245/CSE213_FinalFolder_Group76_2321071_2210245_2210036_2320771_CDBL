@@ -18,7 +18,7 @@ public class EventManagerDashboard {
 
     @FXML
     void cancelEventOnAction(ActionEvent event)  throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Event Manager/Cancel Event-view.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("CancelEvent-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene newScene = new Scene(parent);
@@ -30,7 +30,7 @@ public class EventManagerDashboard {
 
     @FXML
     void clientTransactionOnAction(ActionEvent event)  throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Event Manager/Client Transaction-view.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("ClientTransaction-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene newScene = new Scene(parent);
@@ -42,7 +42,7 @@ public class EventManagerDashboard {
 
     @FXML
     void createBudgetOnAction(ActionEvent event)  throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Event Manager/Create Budget-view.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("CreateBudget-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene newScene = new Scene(parent);
@@ -53,7 +53,7 @@ public class EventManagerDashboard {
 
     @FXML
     void createEventOnAction(ActionEvent event)  throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Event Manager/Create Event-view.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("CreateEvent-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene newScene = new Scene(parent);
@@ -64,7 +64,7 @@ public class EventManagerDashboard {
 
     @FXML
     void modifyEventOnAction(ActionEvent event)  throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Event Manager/Modify Event-view.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("ModifyEvent-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene newScene = new Scene(parent);
@@ -75,7 +75,7 @@ public class EventManagerDashboard {
 
     @FXML
     void reassignEventOnAction(ActionEvent event)  throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Event Manager/Reassign Event -view.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("ReassignEvent-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene newScene = new Scene(parent);
@@ -86,7 +86,7 @@ public class EventManagerDashboard {
 
     @FXML
     void resignationOnAction(ActionEvent event)  throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Event Manager/Resignation-view.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Resignation-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene newScene = new Scene(parent);
@@ -97,7 +97,7 @@ public class EventManagerDashboard {
 
     @FXML
     void updateProfileOnAction(ActionEvent event)  throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Event Manager/Update Profile-view.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("UpdateProfile-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene newScene = new Scene(parent);
