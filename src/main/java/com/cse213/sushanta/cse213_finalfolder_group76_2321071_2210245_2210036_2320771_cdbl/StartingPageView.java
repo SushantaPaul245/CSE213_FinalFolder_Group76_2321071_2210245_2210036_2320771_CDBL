@@ -62,7 +62,13 @@ public class StartingPageView {
     }
 
     @FXML
-    void hrManagerOnAction(ActionEvent event) {
+    void hrManagerOnAction(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("HRManagerDashboard-view.fxml"));
+        Parent parent = loader.load();
+        Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene newScene = new Scene(parent);
+        currentStage.setScene(newScene);
+        currentStage.show();
 
     }
 
@@ -72,7 +78,13 @@ public class StartingPageView {
     }
 
     @FXML
-    void receptionistOnAction(ActionEvent event) {
+    void receptionistOnAction(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("ReceptionistDashboard-view.fxml"));
+        Parent parent = loader.load();
+        Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene newScene = new Scene(parent);
+        currentStage.setScene(newScene);
+        currentStage.show();
 
     }
 
