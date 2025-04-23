@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cse213.sushanta.cse213_finalfolder_group76_2321071_2210245_2210036_2320771_cdbl.OpenAppointmentSchedulerView">
+    <children>
+        <Label layoutX="175.0" layoutY="23.0" prefHeight="42.0" prefWidth="250.0" text="Open Appointment Scheduler">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="selectTimeComboBox" layoutX="111.0" layoutY="99.0" prefWidth="150.0" />
+        <DatePicker fx:id="selectDateDatePicker" layoutX="374.0" layoutY="99.0" prefHeight="26.0" prefWidth="157.0" />
+        <Label layoutX="40.0" layoutY="103.0" prefHeight="18.0" prefWidth="89.0" text="Select Time" />
+        <Label layoutX="307.0" layoutY="102.0" prefHeight="18.0" prefWidth="89.0" text="Select Date" />
+        <TextField fx:id="vsitorNameTextField" layoutX="130.0" layoutY="154.0" />
+        <TextField fx:id="visitorContactTextField" layoutX="130.0" layoutY="200.0" />
+        <TextField fx:id="employeeNameTextField" layoutX="130.0" layoutY="246.0" />
+        <Label layoutX="21.0" layoutY="157.0" prefHeight="18.0" prefWidth="89.0" text="Visitor Name" />
+        <Label layoutX="21.0" layoutY="203.0" prefHeight="18.0" prefWidth="89.0" text="Visitor Contact" />
+        <Label layoutX="21.0" layoutY="249.0" prefHeight="18.0" prefWidth="89.0" text="Employee Name" />
+        <Button layoutX="384.0" layoutY="246.0" mnemonicParsing="false" onAction="#confirmAppointmentOnAction" prefHeight="26.0" prefWidth="150.0" text="Confirm Appointment" />
+        <Button layoutX="204.0" layoutY="337.0" mnemonicParsing="false" onAction="#returntoDashboardOnAction" prefHeight="26.0" prefWidth="150.0" text=" Return to Dashboard" />
+    </children>
+</AnchorPane>
