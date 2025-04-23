@@ -24,7 +24,7 @@ public class TransferSharesViewController {
     private TextField accountNameTextField;
 
     @FXML
-    private TableColumn<TransferShares,String> accountNumberTableColumn;
+    private TableColumn<TransferShares, Integer> accountNumberTableColumn;
 
     @FXML
     private TextField accountNumberTextField;
@@ -36,10 +36,10 @@ public class TransferSharesViewController {
     private TextField numberOfSharesTextField;
 
     @FXML
-    private TableColumn<TransferShares,String> sharesTableColumn;
+    private TableColumn<TransferShares, String> sharesTableColumn;
 
     @FXML
-    private TableView<TransferShares> transferSharesTableView;
+    private TableView<?> transferSharesTableView;
 
     @FXML
     void backOnAction(ActionEvent event) throws IOException {
@@ -50,7 +50,6 @@ public class TransferSharesViewController {
         currentStage.setScene(newScene);
         currentStage.show();
 
-
     }
 
     @FXML
@@ -58,14 +57,11 @@ public class TransferSharesViewController {
 
     }
 
-    @FXML
+    @javafx.fxml.FXML
     public void initialize() {
         accountNumberTableColumn.setCellValueFactory(new PropertyValueFactory<>("AccountNumber"));
         accountNameTableColumn.setCellValueFactory(new PropertyValueFactory<>("AccountName"));
         sharesTableColumn.setCellValueFactory(new PropertyValueFactory<>("Shares"));
-
     }
-
-
 
 }

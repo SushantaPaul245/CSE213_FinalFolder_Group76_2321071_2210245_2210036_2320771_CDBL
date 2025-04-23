@@ -11,13 +11,18 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class EventManagerDashboard {
+public class EventManagerDashboardView {
 
     @FXML
     private Label headlineLabelEMD;
 
     @FXML
-    void cancelEventOnAction(ActionEvent event)  throws IOException {
+    void backOnAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void cancelEventOnAction(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("CancelEvent-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -25,11 +30,10 @@ public class EventManagerDashboard {
         currentStage.setScene(newScene);
         currentStage.show();
 
-
     }
 
     @FXML
-    void clientTransactionOnAction(ActionEvent event)  throws IOException {
+    void clientTransactionOnAction(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("ClientTransaction-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -37,11 +41,10 @@ public class EventManagerDashboard {
         currentStage.setScene(newScene);
         currentStage.show();
 
-
     }
 
     @FXML
-    void createBudgetOnAction(ActionEvent event)  throws IOException {
+    void createBudgetOnAction(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("CreateBudget-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -52,7 +55,7 @@ public class EventManagerDashboard {
     }
 
     @FXML
-    void createEventOnAction(ActionEvent event)  throws IOException {
+    void createEventOnAction(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("CreateEvent-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -63,7 +66,7 @@ public class EventManagerDashboard {
     }
 
     @FXML
-    void modifyEventOnAction(ActionEvent event)  throws IOException {
+    void modifyEventOnAction(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("ModifyEvent-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -74,7 +77,7 @@ public class EventManagerDashboard {
     }
 
     @FXML
-    void reassignEventOnAction(ActionEvent event)  throws IOException {
+    void reassignEventOnAction(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("ReassignEvent-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -85,7 +88,7 @@ public class EventManagerDashboard {
     }
 
     @FXML
-    void resignationOnAction(ActionEvent event)  throws IOException {
+    void resignationOnAction(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Resignation-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -96,8 +99,8 @@ public class EventManagerDashboard {
     }
 
     @FXML
-    void updateProfileOnAction(ActionEvent event)  throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("UpdateProfile-view.fxml"));
+    void updateProfileOnAction(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("EditProfile-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene newScene = new Scene(parent);

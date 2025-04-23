@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="539.0" prefWidth="671.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cse213.sushanta.cse213_finalfolder_group76_2321071_2210245_2210036_2320771_cdbl.SellSharesView">
+<AnchorPane prefHeight="539.0" prefWidth="671.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cse213.sushanta.cse213_finalfolder_group76_2321071_2210245_2210036_2320771_cdbl.SellSharesViewController">
    <children>
       <Label layoutX="49.0" layoutY="46.0" text="Number of Shares" />
       <Label layoutX="49.0" layoutY="88.0" prefHeight="18.0" prefWidth="96.0" text="Per Shares Price" />

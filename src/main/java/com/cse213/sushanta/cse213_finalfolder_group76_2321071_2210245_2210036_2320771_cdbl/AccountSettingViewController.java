@@ -6,49 +6,40 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class ModifyEventViewController {
-
-    @FXML
-    private TextArea changedescriptionTextArea;
+public class AccountSettingViewController {
 
     @FXML
     private TextArea commentTextArea;
 
     @FXML
-    private DatePicker modifyEventDatePicker;
+    private TextField confirmPasswordTextField;
 
     @FXML
-    private TextField modifyEventNameTextField;
+    private TextField currentPasswordTextField;
 
     @FXML
-    private TextField modifyFinishingTimeTextField;
+    private TextField newPasswordTextField;
 
     @FXML
-    private TextField modifyStartingTimeTextField;
-
-    @FXML
-    private TextField modifyVenueTextField;
-
-    @FXML
-    void backOnAction(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("EventManagerDashboard-view.fxml"));
+    void backOnActionB(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("ClientDashboard-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene newScene = new Scene(parent);
         currentStage.setScene(newScene);
         currentStage.show();
 
+
     }
 
     @FXML
-    void modifyAndSaveOnAction(ActionEvent event) {
+    void changePasswordOnActionCP(ActionEvent event) {
 
     }
 

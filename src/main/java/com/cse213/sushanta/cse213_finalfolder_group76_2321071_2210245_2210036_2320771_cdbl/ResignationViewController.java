@@ -39,7 +39,6 @@ public class ResignationViewController {
         currentStage.setScene(newScene);
         currentStage.show();
 
-
     }
 
     @FXML

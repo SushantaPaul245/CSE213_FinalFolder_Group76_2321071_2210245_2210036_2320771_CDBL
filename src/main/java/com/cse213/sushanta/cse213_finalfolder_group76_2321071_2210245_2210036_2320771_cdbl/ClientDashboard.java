@@ -17,7 +17,7 @@ public class ClientDashboard {
     private Label headlineLabel;
 
     @FXML
-    void accountSettingsOnAction(ActionEvent event)  throws IOException {
+    void accountSettingsOnAction(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("AccountSetting-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -25,11 +25,15 @@ public class ClientDashboard {
         currentStage.setScene(newScene);
         currentStage.show();
 
+    }
+
+    @FXML
+    void backOnAction(ActionEvent event) {
 
     }
 
     @FXML
-    void buySharesOnAction(ActionEvent event)  throws IOException  {
+    void buySharesOnAction(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("BuyShares-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -37,12 +41,10 @@ public class ClientDashboard {
         currentStage.setScene(newScene);
         currentStage.show();
 
-
-
     }
 
     @FXML
-    void closeAccountOnAction(ActionEvent event)  throws IOException   {
+    void closeAccountOnAction(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("CloseAccount-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -53,7 +55,7 @@ public class ClientDashboard {
     }
 
     @FXML
-    void sellSharesOnAction(ActionEvent event)  throws IOException    {
+    void sellSharesOnAction(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("SellShares-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -61,11 +63,10 @@ public class ClientDashboard {
         currentStage.setScene(newScene);
         currentStage.show();
 
-
     }
 
     @FXML
-    void transferSharesOnAction(ActionEvent event)  throws IOException    {
+    void transferSharesOnAction(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("TransferShares-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -73,11 +74,10 @@ public class ClientDashboard {
         currentStage.setScene(newScene);
         currentStage.show();
 
-
     }
 
     @FXML
-    void updateProfileOnAction(ActionEvent event)  throws IOException    {
+    void updateProfileOnAction(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("UpdateProfile-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -85,11 +85,10 @@ public class ClientDashboard {
         currentStage.setScene(newScene);
         currentStage.show();
 
-
     }
 
     @FXML
-    void viewBalanceOnAction(ActionEvent event)  throws IOException    {
+    void viewBalanceOnAction(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("ViewBalance-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -97,18 +96,16 @@ public class ClientDashboard {
         currentStage.setScene(newScene);
         currentStage.show();
 
-
     }
 
     @FXML
-    void withdrawFundsOnAction(ActionEvent event)  throws IOException    {
+    void withdrawFundsOnAction(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("WithdrawFunds-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene newScene = new Scene(parent);
         currentStage.setScene(newScene);
         currentStage.show();
-
 
     }
 

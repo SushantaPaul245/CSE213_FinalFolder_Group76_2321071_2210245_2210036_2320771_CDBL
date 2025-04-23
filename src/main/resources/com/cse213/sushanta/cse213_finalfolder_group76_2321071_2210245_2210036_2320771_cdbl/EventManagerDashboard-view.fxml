@@ -20,5 +20,6 @@
       <Button layoutX="375.0" layoutY="187.0" mnemonicParsing="false" onAction="#reassignEventOnAction" prefHeight="26.0" prefWidth="164.0" text="Reassign Event" />
       <Button layoutX="375.0" layoutY="248.0" mnemonicParsing="false" onAction="#createBudgetOnAction" prefHeight="26.0" prefWidth="164.0" text="Create Budget" />
       <Button layoutX="375.0" layoutY="318.0" mnemonicParsing="false" onAction="#resignationOnAction" prefHeight="26.0" prefWidth="164.0" text="Resignation" />
+      <Button layoutX="248.0" layoutY="354.0" mnemonicParsing="false" onAction="#backOnAction" text="Back" />
    </children>
 </AnchorPane>

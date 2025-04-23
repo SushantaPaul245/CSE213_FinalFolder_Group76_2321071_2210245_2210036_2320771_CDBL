@@ -10,7 +10,6 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
-import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -18,31 +17,31 @@ import java.io.IOException;
 public class ClientTransactionViewController {
 
     @FXML
-    private TableColumn<ClientTransaction,Integer> clientIDTableColumn;
+    private TableColumn<?, ?> clientIDTableColumn;
 
     @FXML
     private TextField clientIDTextField;
 
     @FXML
-    private TableColumn<ClientTransaction,String> clientNameTableColumn;
+    private TableColumn<?, ?> clientNameTableColumn;
 
     @FXML
     private TextField clientNameTextField;
 
     @FXML
-    private TableView<ClientTransaction> clientTableView;
+    private TableView<?> clientTableView;
 
     @FXML
-    private TableColumn<ClientTransaction,Integer> numberOfSharesTableColumn;
+    private TableColumn<?, ?> numberOfSharesTableColumn;
 
     @FXML
-    private TableColumn<ClientTransaction,Integer> sharesPriceTableColumn;
+    private TableColumn<?, ?> sharesPriceTableColumn;
 
     @FXML
-    private ComboBox<String> sharesTypeComboBox;
+    private ComboBox<?> sharesTypeComboBox;
 
     @FXML
-    private TableColumn<ClientTransaction,String> sharesTypeTableColumn;
+    private TableColumn<?, ?> sharesTypeTableColumn;
 
     @FXML
     void backOnAction(ActionEvent event) throws IOException {
@@ -53,21 +52,10 @@ public class ClientTransactionViewController {
         currentStage.setScene(newScene);
         currentStage.show();
 
-
     }
 
     @FXML
     void searchOnAction(ActionEvent event) {
-
-    }
-    @FXML
-    public void initialize() {
-        sharesTypeComboBox.getItems().addAll("Buy", "Sell");
-        clientIDTableColumn.setCellValueFactory(new PropertyValueFactory<>("ClientID"));
-        clientNameTableColumn.setCellValueFactory(new PropertyValueFactory<>("ClientName"));
-        sharesTypeTableColumn.setCellValueFactory(new PropertyValueFactory<>("SharesType"));
-        sharesPriceTableColumn.setCellValueFactory(new PropertyValueFactory<>("SharesPrice"));
-        numberOfSharesTableColumn.setCellValueFactory(new PropertyValueFactory<>("NumberOfShares"));
 
     }
 

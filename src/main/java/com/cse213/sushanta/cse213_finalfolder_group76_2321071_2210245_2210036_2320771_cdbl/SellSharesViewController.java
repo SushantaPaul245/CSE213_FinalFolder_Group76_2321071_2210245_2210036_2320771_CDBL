@@ -27,13 +27,13 @@ public class SellSharesViewController {
     private TextField perSharesPriceTextField;
 
     @FXML
-    private TableColumn<SellShares,String> priceTableColumn;
+    private TableColumn<SellShares, Integer> priceTableColumn;
 
     @FXML
     private TableView<SellShares> sellSharesTableView;
 
     @FXML
-    private TableColumn<SellShares,String> sharesTableColumn;
+    private TableColumn<SellShares, String> sharesTableColumn;
 
     @FXML
     private TextArea totalNumberOfSharesTextArea;
@@ -55,14 +55,13 @@ public class SellSharesViewController {
         currentStage.setScene(newScene);
         currentStage.show();
 
-
     }
-    @FXML
+
+    @javafx.fxml.FXML
     public void initialize() {
         sharesTableColumn.setCellValueFactory(new PropertyValueFactory<>("Shares"));
         priceTableColumn.setCellValueFactory(new PropertyValueFactory<>("Price"));
 
     }
-
 
 }

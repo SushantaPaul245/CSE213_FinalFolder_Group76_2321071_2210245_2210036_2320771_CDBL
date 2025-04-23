@@ -29,7 +29,6 @@ public class CancelEventViewController {
         currentStage.setScene(newScene);
         currentStage.show();
 
-
     }
 
     @FXML

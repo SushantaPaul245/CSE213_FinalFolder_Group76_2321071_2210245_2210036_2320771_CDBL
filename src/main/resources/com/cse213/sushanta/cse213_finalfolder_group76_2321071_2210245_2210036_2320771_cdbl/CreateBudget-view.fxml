@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="667.0" prefWidth="801.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cse213.sushanta.cse213_finalfolder_group76_2321071_2210245_2210036_2320771_cdbl.CreateBudgetView">
+<AnchorPane prefHeight="667.0" prefWidth="801.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cse213.sushanta.cse213_finalfolder_group76_2321071_2210245_2210036_2320771_cdbl.CreateBudgetViewController">
    <children>
       <Label layoutX="35.0" layoutY="37.0" prefHeight="18.0" prefWidth="74.0" text="Event Name" />
       <Label layoutX="35.0" layoutY="81.0" prefHeight="18.0" prefWidth="74.0" text="Venue Cost" />

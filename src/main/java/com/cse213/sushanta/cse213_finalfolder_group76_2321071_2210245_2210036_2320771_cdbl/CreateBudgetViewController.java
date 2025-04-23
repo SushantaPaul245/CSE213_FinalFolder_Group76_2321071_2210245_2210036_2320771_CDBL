@@ -21,31 +21,31 @@ public class CreateBudgetViewController {
     private TableView<CreateBudget> budgetTableView;
 
     @FXML
-    private TableColumn<CreateBudget,String> eventNameTableColumn;
+    private TableColumn<CreateBudget, String> eventNameTableColumn;
 
     @FXML
     private TextField eventNameTextField;
 
     @FXML
-    private TableColumn<CreateBudget,Integer> foodCostTableColumn;
+    private TableColumn<CreateBudget, Integer> foodCostTableColumn;
 
     @FXML
     private TextField foodCostTextField;
 
     @FXML
-    private TableColumn<CreateBudget,Integer> meterialsCostTableColumn;
+    private TableColumn<CreateBudget, Integer> meterialsCostTableColumn;
 
     @FXML
     private TextField meterialsCostTextField;
 
     @FXML
-    private TableColumn<CreateBudget,Integer> othersCostTableColumn;
+    private TableColumn<CreateBudget, Integer> othersCostTableColumn;
 
     @FXML
     private TextField othersCostTextField;
 
     @FXML
-    private TableColumn<CreateBudget,Integer> servicesCostTableColumn;
+    private TableColumn<CreateBudget, Integer> servicesCostTableColumn;
 
     @FXML
     private TextField servicesCostTextField;
@@ -54,7 +54,7 @@ public class CreateBudgetViewController {
     private TextArea totalCostTextArea;
 
     @FXML
-    private TableColumn<CreateBudget,Integer> venueCostTableColumn;
+    private TableColumn<CreateBudget, Integer> venueCostTableColumn;
 
     @FXML
     private TextField venueCostTextField;
@@ -79,7 +79,8 @@ public class CreateBudgetViewController {
     void submitBudgetForApprovalOnAction(ActionEvent event) {
 
     }
-    @FXML
+
+    @javafx.fxml.FXML
     public void initialize() {
         eventNameTableColumn.setCellValueFactory(new PropertyValueFactory<>("EventName"));
         venueCostTableColumn.setCellValueFactory(new PropertyValueFactory<>("VenueCost"));
@@ -87,7 +88,7 @@ public class CreateBudgetViewController {
         meterialsCostTableColumn.setCellValueFactory(new PropertyValueFactory<>("MaterialsCost"));
         servicesCostTableColumn.setCellValueFactory(new PropertyValueFactory<>("ServicesCost"));
         othersCostTableColumn.setCellValueFactory(new PropertyValueFactory<>("OthersCost"));
-
     }
 
-}
+
+    }

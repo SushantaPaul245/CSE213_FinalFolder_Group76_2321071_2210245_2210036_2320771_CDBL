@@ -20,5 +20,6 @@
       <Button layoutX="436.0" layoutY="187.0" mnemonicParsing="false" onAction="#updateProfileOnAction" prefHeight="26.0" prefWidth="146.0" text="Update Profile" />
       <Button layoutX="434.0" layoutY="248.0" mnemonicParsing="false" onAction="#accountSettingsOnAction" prefHeight="26.0" prefWidth="146.0" text="Account Settings" />
       <Button layoutX="433.0" layoutY="309.0" mnemonicParsing="false" onAction="#closeAccountOnAction" prefHeight="26.0" prefWidth="146.0" text="Close Account" />
+      <Button layoutX="274.0" layoutY="344.0" mnemonicParsing="false" onAction="#backOnAction" text="Back" />
    </children>
 </AnchorPane>
