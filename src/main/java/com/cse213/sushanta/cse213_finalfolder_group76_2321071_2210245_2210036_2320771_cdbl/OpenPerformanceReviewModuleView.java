@@ -37,7 +37,7 @@ public class OpenPerformanceReviewModuleView {
 
     @FXML
     void returntoDashboardOnAction(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("OpenPayrollModule-view.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("HRManagerDashboard-view.fxml"));
         Parent parent = loader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene newScene = new Scene(parent);
