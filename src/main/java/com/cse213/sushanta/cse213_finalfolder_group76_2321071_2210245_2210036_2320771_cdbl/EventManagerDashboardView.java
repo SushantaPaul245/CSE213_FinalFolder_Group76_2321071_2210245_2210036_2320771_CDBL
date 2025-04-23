@@ -17,7 +17,13 @@ public class EventManagerDashboardView {
     private Label headlineLabelEMD;
 
     @FXML
-    void backOnAction(ActionEvent event) {
+    void backOnAction(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("StartingPage-view.fxml"));
+        Parent parent = loader.load();
+        Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene newScene = new Scene(parent);
+        currentStage.setScene(newScene);
+        currentStage.show();
 
     }
 
